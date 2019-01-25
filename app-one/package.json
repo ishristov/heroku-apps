@@ -1,0 +1,17 @@
+{
+  "name": "app-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "start-dev": "nodemon server.js -e js",
+    "publish": "publish": "currDir=${PWD##*/} && cd ../ && git subtree push --prefix ${currDir} heroku-one master || true"
+  },
+  "author": "Ivaylo Hristov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
